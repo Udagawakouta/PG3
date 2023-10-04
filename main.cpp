@@ -24,11 +24,11 @@ char Min<char>(char a, char b)
 int main()
 {
 
-    printf("%d\n", Min<int>(100, 120));
+    printf("%d\n", Min<int>(120, 140));
 
-    printf("%f\n", Min<float>(130.5f, 150.5f));
+    printf("%f\n", Min<float>(150.5f, 175.5f));
 
-    printf("%lf\n", Min<double>(134.0f, 167.0f));
+    printf("%lf\n", Min<double>(116.0f, 184.0f));
 
     Min<char>('a', 'b');
 
