@@ -11,7 +11,7 @@ int Recursive(int n, int m) {
 
 int main() {
 	int v = 0;
-	int m = 5;
+	int m = 8;
 	int n = 100; // Ä‹A“I‚ÈˆêŠÔ‚Ì‹‹
 	int b = 1072;// ˆê”Ê“I‚ÈˆêŠÔ‚Ì‹‹
 
