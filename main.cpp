@@ -1,18 +1,13 @@
 #include <stdio.h>
 #include <Windows.h>
 #include <time.h>
+#include<functional>
 
 typedef void (*PFunc)(int*);
 
 #pragma region コールバック関数
 
-// コールバック関数
-void DispResult(int* s)
-{
-	printf("%d秒待つ\n", *s);
-}
-
-void setTimeout(PFunc p, int& second)
+void setTimeout(std::function<void(int*)> p, int& second)
 {
 	p(&second);
 	Sleep(second * 1000);
@@ -23,6 +18,8 @@ void setTimeout(PFunc p, int& second)
 #pragma region 関数ポインタ
 int main()
 {
+	std::function<void(int*)> fx = [](int* s) {printf("%d秒待つ\n", *s); };
+
 	srand((unsigned int)time(NULL));
 
 	int n = 0;
@@ -30,8 +27,8 @@ int main()
 	int dice;
 	dice = rand() % 6 + 1;
 
-	PFunc p;
-	p = DispResult;
+	//PFunc p;
+	//p = DispResult;
 
 	printf("0か1を入力してください\n");
 	scanf_s("%d", &n);
@@ -40,14 +37,14 @@ int main()
 	{
 		if (dice % 2 == 0)
 		{
-			setTimeout(p, m);
+			setTimeout(fx, m);
 
 			printf("正解\n");
 
 		}
 		else
 		{
-			setTimeout(p, m);
+			setTimeout(fx, m);
 
 			printf("不正解\n");
 
@@ -57,13 +54,13 @@ int main()
 	{
 		if (dice % 2 == 1)
 		{
-			setTimeout(p, m);
+			setTimeout(fx, m);
 
 			printf("正解\n");
 		}
 		else
 		{
-			setTimeout(p, m);
+			setTimeout(fx, m);
 
 			printf("不正解\n");
 
