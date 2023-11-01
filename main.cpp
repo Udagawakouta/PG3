@@ -25,8 +25,8 @@ int main()
 {
 	srand((unsigned int)time(NULL));
 
-	int n = 0;
-	int m = 3;
+	int evenNumber = 0; // ‹ô”
+	int oddNumber = 3;  // Šï”
 	int dice;
 	dice = rand() % 6 + 1;
 
@@ -34,41 +34,20 @@ int main()
 	p = DispResult;
 
 	printf("0‚©1‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢\n");
-	scanf_s("%d", &n);
+	scanf_s("%d", &evenNumber);
 
-	if (n == 0)
+	setTimeout(p, oddNumber);
+
+	if (evenNumber==dice%2)
 	{
-		if (dice % 2 == 0)
-		{
-			setTimeout(p, m);
-
-			printf("³‰ğ\n");
-
-		}
-		else
-		{
-			setTimeout(p, m);
-
-			printf("•s³‰ğ\n");
-
-		}
+		printf("³‰ğ\n");
 	}
 	else
 	{
-		if (dice % 2 == 1)
-		{
-			setTimeout(p, m);
-
-			printf("³‰ğ\n");
-		}
-		else
-		{
-			setTimeout(p, m);
-
-			printf("•s³‰ğ\n");
-
-		}
+		printf("•s³‰ğ\n");
 	}
+
+	
 
 	printf("³‰ğ‚Í %d ‚Å‚µ‚½", dice);
 
