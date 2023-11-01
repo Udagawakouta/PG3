@@ -47,8 +47,6 @@ int main()
 		printf("•s³‰ğ\n");
 	}
 
-	
-
 	printf("³‰ğ‚Í %d ‚Å‚µ‚½", dice);
 
 	return 0;
