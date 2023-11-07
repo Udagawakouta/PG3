@@ -27,8 +27,8 @@ int main()
 	int dice;
 	dice = rand() % 6 + 1;
 
-	//PFunc p;
-	//p = DispResult;
+	PFunc p;
+	p = DispResult;
 
 	printf("0‚©1‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢\n");
 	scanf_s("%d", &evenNumber);
