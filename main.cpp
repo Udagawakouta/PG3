@@ -7,6 +7,12 @@ typedef void (*PFunc)(int*);
 
 #pragma region コールバック関数
 
+// コールバック関数
+void DispResult(int* s)
+{
+	printf("%d秒待つ\n", *s);
+}
+
 void setTimeout(std::function<void(int*)> p, int& second)
 {
 	p(&second);
