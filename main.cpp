@@ -33,38 +33,15 @@ int main()
 	printf("0‚©1‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢\n");
 	scanf_s("%d", &n);
 
-	if (n == 0)
+	setTimeout(p, oddNumber);
+
+	if (evenNumber == dice % 2)
 	{
-		if (dice % 2 == 0)
-		{
-			setTimeout(fx, m);
-
-			printf("³‰ğ\n");
-
-		}
-		else
-		{
-			setTimeout(fx, m);
-
-			printf("•s³‰ğ\n");
-
-		}
+		printf("³‰ğ\n");
 	}
 	else
 	{
-		if (dice % 2 == 1)
-		{
-			setTimeout(fx, m);
-
-			printf("³‰ğ\n");
-		}
-		else
-		{
-			setTimeout(fx, m);
-
-			printf("•s³‰ğ\n");
-
-		}
+		printf("•s³‰ğ\n");
 	}
 
 	printf("³‰ğ‚Í %d ‚Å‚µ‚½", dice);
