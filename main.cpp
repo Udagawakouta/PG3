@@ -3,15 +3,7 @@
 #include <time.h>
 #include<functional>
 
-typedef void (*PFunc)(int*);
-
 #pragma region コールバック関数
-
-// コールバック関数
-void DispResult(int* s)
-{
-	printf("%d秒待つ\n", *s);
-}
 
 void setTimeout(std::function<void(int*)> p, int& second)
 {
@@ -33,13 +25,13 @@ int main()
 	int dice;
 	dice = rand() % 6 + 1;
 
-	PFunc p;
-	p = DispResult;
+	/*PFunc p;
+	p = DispResult;*/
 
 	printf("0か1を入力してください\n");
 	scanf_s("%d", &evenNumber);
 
-	setTimeout(p, oddNumber);
+	setTimeout(fx, oddNumber);
 
 	if (evenNumber == dice % 2)
 	{
