@@ -127,11 +127,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="dementorB.cpp" />
+    <ClCompile Include="Maindementor.cpp" />
+    <ClCompile Include="dementorC.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="dementorA.cpp" />
+    <ClCompile Include="Monster.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="dementorB.h" />
+    <ClInclude Include="Maindementor.h" />
+    <ClInclude Include="dementorC.h" />
     <ClInclude Include="Enemy.h" />
+    <ClInclude Include="dementorA.h" />
+    <ClInclude Include="Monster.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
