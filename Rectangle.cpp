@@ -2,8 +2,10 @@
 
 void Rectangle::Size()
 {
+
 }
 
 void Rectangle::Draw()
 {
+
 }

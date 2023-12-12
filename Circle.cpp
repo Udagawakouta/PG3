@@ -2,8 +2,10 @@
 
 void Circle::Size()
 {
+
 }
 
 void Circle::Draw()
 {
+
 }
