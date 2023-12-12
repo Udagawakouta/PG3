@@ -1,17 +1,17 @@
-#include "dementorB.h"
+#include "pikachu.h"
 
-dementorB::dementorB()
+pikachu::pikachu()
 {
-	name_ = "ディメンター";
+	name_ = "ピカチュウ";
 	printf("%sがあらわれた\n", name_);
 }
 
-void dementorB::Purr()
+void pikachu::Purr()
 {
 	printf("%sの吸血鬼のキス!\n", name_);
 }
 
-dementorB::~dementorB()
+pikachu::~pikachu()
 {
 	printf("%sをたおした\n", name_);
 }

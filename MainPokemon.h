@@ -1,13 +1,13 @@
 #pragma once
 #include <stdio.h>
 
-class Maindementor
+class MainPokemon
 {
 public:
 
-	Maindementor();
+	MainPokemon();
 
-	virtual ~Maindementor();
+	virtual ~MainPokemon();
 
 	virtual void Purr();
 

@@ -1,18 +1,18 @@
 #include <stdio.h>
-#include "dementorA.h"
-#include "dementorB.h"
-#include "dementorC.h"
-#include "Monster.h"
+#include "pichu.h"
+#include "pikachu.h"
+#include "raichu.h"
+#include "Pokemon.h"
 
 int main()
 {
 	printf("生成フェーズ\n");
-	Maindementor* Maindementors[4];
+	MainPokemon* Maindementors[4];
 
-	Maindementors[0] = new dementorA;
-	Maindementors[1] = new dementorB;
-	Maindementors[2] = new dementorC;
-	Maindementors[3] = new Monster;
+	Maindementors[0] = new pichu;
+	Maindementors[1] = new pikachu;
+	Maindementors[2] = new raichu;
+	Maindementors[3] = new Pokemon;
 
 	printf("\n攻撃フェーズ\n");
 

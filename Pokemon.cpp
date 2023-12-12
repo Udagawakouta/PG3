@@ -1,17 +1,17 @@
-#include "Monster.h"
+#include "Pokemon.h"
 
-Monster::Monster()
+Pokemon::Pokemon()
 {
-	name_ = "ヴォルデモート卿";
+	name_ = "サトシ";
 	printf("%sがあらわれた\n", name_);
 }
 
-void Monster::Purr()
+void Pokemon::Purr()
 {
 	printf("%s「お辞儀を　するのだ！」\n", name_);
 }
 
-Monster::~Monster()
+Pokemon::~Pokemon()
 {
 	printf("%sをたおした\n", name_);
 }

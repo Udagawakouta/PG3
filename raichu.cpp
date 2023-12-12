@@ -1,17 +1,17 @@
-#include "dementorA.h"
+#include "raichu.h"
 
-dementorA::dementorA()
+raichu::raichu()
 {
-	name_ = "ディメンター";
+	name_ = "ライチュウ";
 	printf("%sがあらわれた\n", name_);
 }
 
-void dementorA::Purr()
+void raichu::Purr()
 {
 	printf("%sの吸血鬼のキス!\n", name_);
 }
 
-dementorA::~dementorA()
+raichu::~raichu()
 {
 	printf("%sをたおした\n", name_);
 }

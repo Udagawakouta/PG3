@@ -127,21 +127,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="dementorB.cpp" />
-    <ClCompile Include="Maindementor.cpp" />
-    <ClCompile Include="dementorC.cpp" />
+    <ClCompile Include="pikachu.cpp" />
+    <ClCompile Include="MainPokemon.cpp" />
+    <ClCompile Include="raichu.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="dementorA.cpp" />
-    <ClCompile Include="Monster.cpp" />
+    <ClCompile Include="pichu.cpp" />
+    <ClCompile Include="Pokemon.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="dementorB.h" />
-    <ClInclude Include="Maindementor.h" />
-    <ClInclude Include="dementorC.h" />
+    <ClInclude Include="pikachu.h" />
+    <ClInclude Include="MainPokemon.h" />
+    <ClInclude Include="raichu.h" />
     <ClInclude Include="Enemy.h" />
-    <ClInclude Include="dementorA.h" />
-    <ClInclude Include="Monster.h" />
+    <ClInclude Include="pichu.h" />
+    <ClInclude Include="Pokemon.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
