@@ -2,10 +2,16 @@
 class IShape
 {
 public:
-	void Size();
+	IShape() = default;
+	~IShape() = default;
 
-	void Draw();
+	// –ÊÏ‚ğ‹‚ß‚é
+	virtual void Size() = 0;
 
-private:
+	// ‚»‚Ì’l‚ğ•\¦‚·‚éŠÖ”
+	virtual void Draw() = 0;
+
+protected:
+	float Result_;
 };
 

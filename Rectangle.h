@@ -1,11 +1,19 @@
 #pragma once
-class Rectangle
+#include "IShape.h"
+
+class Rectangle:public IShape
 {
 public:
-	void Size();
+	Rectangle();
 
-	void Draw();
+	~Rectangle();
+
+	void Size()override;
+
+	void Draw()override;
 
 private:
+	int width_;
+	int height_;
 };
 

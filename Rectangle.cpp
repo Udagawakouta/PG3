@@ -1,11 +1,29 @@
 #include "Rectangle.h"
+#include <stdio.h>
 
-void Rectangle::Size()
+Rectangle::Rectangle()
+{
+	width_ = 20;
+	height_ = 20;
+	printf("矩形の情報\n");
+	printf("縦:%d\n\n", height_);
+	printf("横:%d\n\n", width_);
+}
+
+Rectangle::~Rectangle()
 {
 
 }
 
+void Rectangle::Size()
+{
+	Result_ = width_ * height_;
+
+	printf("矩形の面積を計算\n");
+	printf("式:%d*%d\n\n", width_, height_);
+}
+
 void Rectangle::Draw()
 {
-
+	printf("矩形の面積は%.0f\n\n", Result_);
 }

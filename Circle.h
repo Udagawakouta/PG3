@@ -1,11 +1,16 @@
 #pragma once
-class Circle
+#include "IShape.h"
+
+class Circle:public IShape
 {
 public:
-	void Size();
+	Circle();
+	~Circle();
+	void Size()override;
 
-	void Draw();
+	void Draw()override;
 
 private:
+	int radius_;
 };
 
